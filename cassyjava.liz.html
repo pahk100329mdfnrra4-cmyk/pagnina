@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>BOX</title>
+    <style>
+        body {
+            background-color: rgb(149, 68, 211);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+        #btn-oscuro {
+            background-color: #222;
+            color: white;
+            border: 2px solid white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+        a {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 15px 0;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+        img {
+            border-radius: 12px;
+            object-fit: cover;
+            max-width: 100%;
+        }
+        table {
+            background-color: white;
+            border-collapse: collapse;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+            color: #333;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        .seccion-destacada {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .mision {
+            color: rgb(198, 43, 43);
+        }
+        .vision {
+            color: rgb(194, 12, 12);
+        }
+        footer {
+            margin-top: 30px;
+            color: white;
+            font-weight: bold;
+        }
+        #contador-contenedor {
+            color: white;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn-oscuro">Cambiar Modo Oscuro / Claro</button>
+    
+    <header>
+        <h1><span style="color: bisque;">Karen Paniagua</span></h1>
+        <h2><span style="color: rgb(7, 7, 7);">APRENDAN DEL BOX</span></h2>
+    </header>
+
+    <div style="display: flex; justify-content: center; margin: 20px 0;">
+        <img id="foto-box" src="c:\Users\PC38\Pictures\Screenshots\logo.png" alt="Karen Box" width="550" height="550">
+    </div>
+
+    <nav>
+        <!-- Se corrigió este enlace para que funcione tanto como link real como contador -->
+        <a id="enlace-gustos" href="file:///C:/Users/PC38/Documents/karen/box.html" target="_blank">MIS GUSTOS</a>
+        <p id="contador-contenedor">Total de clics: <span id="contador">0</span></p>
+    </nav>
+
+    <main>
+        <h1>Amigos</h1>
+        <table>
+            <tr>
+                <th>AMIGO</th>
+                <th>NOMBRE</th>
+                <th>FOTO</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="nombre-amigo">MAYTE</td>
+                <td><img src="c:\Users\steff\Downloads\KAREN-AMIGA2.jpeg" alt="Mayte" width="100" height="100"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="nombre-amigo">JASMIN</td>
+                <td><img src="c:\Users\steff\Downloads\KAREN -AMIGA1.jpeg" alt="Jasmin" width="100" height="100"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="nombre-amigo">JULIETA</td>
+                <td><img src="c:\Users\steff\Downloads\G-G.jpg" alt="Julieta" width="100" height="100"></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>AMIGO</th>
+                <th>NOMBRE</th>
+                <th>FOTO</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="nombre-amigo">ROBERTO</td>
+                <td><img src="c:\Users\steff\Downloads\KAREN AMIGOS.jpeg" alt="Roberto" width="100" height="100"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="nombre-amigo">JULIAN</td>
+                <td><img src="c:\Users\steff\Downloads\KAREN AMIGOS.jpeg" alt="Julian" width="100" height="100"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="nombre-amigo">TADEO</td>
+                <td><img src="c:\Users\steff\Downloads\KAREN AMIGOS.jpeg" alt="Tadeo" width="100" height="100"></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>AMIGO</th>
+                <th>NOMBRE</th>
+                <th>FOTO</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="nombre-amigo">ADAIR</td>
+                <td><img src="c:\Users\steff\Downloads\BB.jpg" alt="Adair" width="100" height="100"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="nombre-amigo">MELANI</td>
+                <td><img src="c:\Users\steff\Downloads\BB.jpg" alt="Melani" width="100" height="100"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="nombre-amigo">LUIS</td>
+                <td><img src="c:\Users\steff\Downloads\BB.jpg" alt="Luis" width="100" height="100"></td>
+            </tr>
+        </table>
+
+        <div class="seccion-destacada">
+            <h2 class="mision">MISIÓN: SER UNA MUY BUENA BOXEADORA Y LUCHAR POR MIS METAS</h2>
+        </div>
+        <hr>
+        <div class="seccion-destacada">
+            <h2 class="vision">VISIÓN: DENTRO DE 5 AÑOS ME VEO TRABAJANDO Y TENIENDO MI PROPIA ACADEMIA DE BOX</h2>
+        </div>
+    </main>
+
+    <footer>
+        <p id="nombre">KAREN</p>
+        <p id="twiter">@KAREN_90</p>
+        <p id="correo">@KARENPANIAGUA0</p>
+    </footer>
+
+    <script>
+        
+        window.onload = function() {
+            alert("¡Bienvenido a la página oficial de Karen Paniagua! Aprendan del Box.");
+        };
+
+        
+        const botonOscuro = document.getElementById("btn-oscuro");
+        let modoOscuroActivo = false;
+
+        botonOscuro.addEventListener("click", function() {
+            if (!modoOscuroActivo) {
+                document.body.style.backgroundColor = "#1a1a1a";
+                document.body.style.color = "#ffffff";
+                botonOscuro.innerText = "Cambiar a Modo Morado";
+                modoOscuroActivo = true;
+            } else {
+                document.body.style.backgroundColor = "rgb(149, 68, 211)";
+                document.body.style.color = "#000000";
+                botonOscuro.innerText = "Cambiar a Modo Oscuro";
+                modoOscuroActivo = false;
+            }
+        });
+
+        
+        const enlaceGustos = document.getElementById("enlace-gustos");
+        const mostrarContador = document.getElementById("contador");
+        let contadorClics = 0;
+
+        enlaceGustos.addEventListener("click", function() {
+            contadorClics++;
+            mostrarContador.textContent = contadorClics;
+        
+        });
+
+        
+        const fotoPrincipal = document.getElementById("foto-box");
+        fotoPrincipal.addEventListener("mouseenter", function() {
+            fotoPrincipal.style.transform = "scale(1.06)";
+            fotoPrincipal.style.transition = "transform 0.3s ease";
+        });
+        fotoPrincipal.addEventListener("mouseleave", function() {
+            fotoPrincipal.style.transform = "scale(1)";
+        });
+
+        
+        const nombresAmigos = document.querySelectorAll(".nombre-amigo");
+        nombresAmigos.forEach(amigo => {
+            amigo.addEventListener("click", function() {
+                alert("¡" + amigo.innerText + " es un excelente amigo del equipo de Karen!");
+            });
+        });
+    </script>
+</body>
+</html>
